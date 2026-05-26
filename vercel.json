@@ -1,11 +1,5 @@
 {
-  "functions": {
-    "api/*.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "rewrites": [
-    { "source": "/gerarpix.php", "destination": "/api/gerarpix" },
-    { "source": "/gerarpix",     "destination": "/api/gerarpix" }
+    { "source": "/gerarpix", "destination": "/api/gerarpix" }
   ]
 }
