@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/gerarpix.php", "destination": "/api/gerarpix" },
+    { "source": "/gerarpix",     "destination": "/api/gerarpix" }
+  ]
+}
