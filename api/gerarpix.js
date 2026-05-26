@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     return res.status(400).json({
       success: false,
       message: 'Parâmetros obrigatórios: ?name=Nome&document=CPF',
-      exemplo: '?name=Brenno%20Soares&document=01724315498'
+      exemplo: '?name=daniel%20Soares&document=01234567890'
     });
   }
 
@@ -244,7 +244,7 @@ function gerarHTML(nome, valor, pixCode, transactionId) {
 
   <div class="footer">
     <span class="footer-txt">Pagamento seguro processado por</span>
-    <span class="footer-logo">Duttyfy 🔒</span>
+    <span class="footer-logo">Serasa Experience 🔒</span>
   </div>
 
 </div>
