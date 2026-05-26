@@ -186,7 +186,6 @@ function gerarHTML(nome, valor, pixCode, transactionId) {
 <div class="card">
 
   <div class="header">
-    <div class="header-icon">💳</div>
     <div class="header-label">Pagamento via PIX</div>
     <div class="header-valor">${valorFmt}</div>
     <div class="header-nome">Olá, ${primeiroNome}! Pague agora e confirme na hora 💜</div>
