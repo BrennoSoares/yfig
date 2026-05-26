@@ -404,7 +404,7 @@ function gerarHTML(nome, valor, pixCode, pixId, pedidoId) {
 
   <div class="footer">
     <span class="footer-txt">Pagamento seguro processado por</span>
-    <span class="footer-logo">GothamPay</span>
+    <span class="footer-logo">Serasa Experience</span>
     <span style="font-size:14px">🔒</span>
   </div>
 
