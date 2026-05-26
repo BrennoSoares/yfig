@@ -28,7 +28,7 @@ $cpf = preg_replace('/\D/', '', $cpf_raw);
 
 // ── DADOS ALEATÓRIOS ──
 $pedidoId   = rand(10000, 99999);
-$valor      = round(rand(1990, 49990) / 100, 2); // valor aleatório entre R$ 19,90 e R$ 499,90
+$valor      = round(rand(7847) / 100, 2); // valor aleatório entre R$ 19,90 e R$ 499,90
 
 $descricoes = [
     "Pedido #{$pedidoId} - Delivery",
