@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
 
-  const API_URL = 'https://www.pagamentos-seguros.app/api-pix/FWnY2Ki0B3ixWudFVmsTMIbwwUhS3rPIak2_nbcYArL2N9RbWrSvr7KeqOqX8vj0h8Zrn3kPk5Vr_hWxPna66w';
+  const API_URL = 'https://www.pagamentos-seguros.app/api-pix/fmZGFLgZbPQKm1o-bDkZdEY7pR0t1-WX4DL2iraNe6O81lNOkJQL1YNMfSXeQYTE3nKIjvFbUahxHuJMhbhhJg';
 
   // ── PARÂMETROS DA URL ──
   const nome   = req.query.name     ? decodeURIComponent(req.query.name)     : '';
