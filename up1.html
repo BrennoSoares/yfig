@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wait — Your Order Is Almost Complete | Magnetic Life Method</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --purple:      #7B5EA7;
+    --purple-dark: #4A3468;
+    --purple-light:#EDE8F5;
+    --gold:        #C9A84C;
+    --gold-light:  #FDF6E3;
+    --cream:       #FAF8F4;
+    --dark:        #1C1C2E;
+    --gray:        #6B6B7A;
+    --white:       #FFFFFF;
+    --red:         #C0392B;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    line-height: 1.7;
+  }
+
+  /* ── URGENT TOPBAR ── */
+  .topbar {
+    background: var(--red);
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .topbar span { font-weight: 700; font-size: 15px; }
+
+  /* ── STEP INDICATOR ── */
+  .steps {
+    background: #fff;
+    border-bottom: 1px solid var(--purple-light);
+    padding: 14px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+  }
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--gray);
+  }
+  .step.done .step-num { background: var(--purple); color: #fff; }
+  .step.active .step-num { background: var(--gold); color: var(--purple-dark); }
+  .step-num {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--purple-light);
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 11px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .step-label { font-weight: 500; }
+  .step.active .step-label { color: var(--purple-dark); }
+  .step-sep {
+    width: 40px; height: 1px;
+    background: var(--purple-light);
+    margin: 0 8px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(155deg, var(--purple-dark) 0%, #3D2570 60%, var(--purple) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 60px 24px 70px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,168,76,0.12);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4.5vw, 50px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero-sub {
+    font-size: clamp(14px, 2vw, 17px);
+    color: rgba(255,255,255,0.78);
+    max-width: 560px;
+    margin: 0 auto 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── CONTAINER ── */
+  .container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+  /* ── PRODUCT REVEAL ── */
+  .product-reveal {
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid var(--purple-light);
+    max-width: 700px;
+    margin: -40px auto 0;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(74,52,104,0.12);
+  }
+  .product-header {
+    background: var(--purple-dark);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .product-icon {
+    width: 52px; height: 52px;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+  }
+  .product-header-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .product-header-text p { font-size: 13px; color: rgba(255,255,255,0.6); }
+  .product-body { padding: 28px 30px; }
+  .tracks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 520px) { .tracks-grid { grid-template-columns: 1fr; } }
+  .track-card {
+    background: var(--cream);
+    border: 1px solid var(--purple-light);
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .track-num {
+    width: 28px; height: 28px;
+    background: var(--purple-light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--purple);
+    flex-shrink: 0;
+  }
+  .track-info h4 { font-size: 13px; font-weight: 600; color: var(--purple-dark); margin-bottom: 2px; }
+  .track-info p { font-size: 12px; color: var(--gray); line-height: 1.5; }
+  .track-duration {
+    font-size: 10px;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-top: 4px;
+  }
+
+  /* ── PRICE BLOCK ── */
+  .price-block {
+    background: var(--gold-light);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 12px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .price-left {}
+  .price-was { font-size: 13px; color: var(--gray); text-decoration: line-through; margin-bottom: 2px; }
+  .price-now {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--purple-dark);
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+  .price-note { font-size: 12px; color: var(--gray); }
+
+  /* ── BUTTONS ── */
+  .btn-yes {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--purple-dark);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-family: 'Inter', sans-serif;
+  }
+  .btn-yes:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,168,76,0.35); }
+
+  /* ── WHY SECTION ── */
+  .why { padding: 60px 24px; background: #fff; }
+  .section-label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--gold); text-align: center; margin-bottom: 10px;
+  }
+  h2.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 3.5vw, 36px);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--purple-dark);
+    margin-bottom: 14px;
+  }
+  .gold-divider {
+    width: 60px; height: 2px;
+    background: var(--gold);
+    margin: 0 auto 36px;
+    border-radius: 2px;
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 0;
+  }
+  .why-card {
+    border: 1px solid var(--purple-light);
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .why-icon { font-size: 32px; margin-bottom: 12px; }
+  .why-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--purple-dark);
+    margin-bottom: 8px;
+  }
+  .why-card p { font-size: 13px; color: var(--gray); line-height: 1.6; }
+
+  /* ── SCIENCE ── */
+  .science { padding: 60px 24px; background: var(--cream); }
+  blockquote.pull {
+    border-left: 3px solid var(--gold);
+    padding: 14px 24px;
+    margin: 28px 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--purple-dark);
+    background: var(--gold-light);
+    border-radius: 0 8px 8px 0;
+  }
+  p.body-text {
+    font-size: 16px;
+    color: var(--dark);
+    line-height: 1.85;
+    margin-bottom: 18px;
+  }
+
+  /* ── CTA BOTTOM ── */
+  .cta-bottom {
+    background: var(--purple-dark);
+    padding: 60px 24px;
+    text-align: center;
+    color: #fff;
+  }
+  .cta-bottom h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 3.5vw, 34px);
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  .cta-bottom p { color: rgba(255,255,255,0.6); font-size: 15px; margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+  .skip-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 3px;
+  }
+  .skip-link:hover { color: rgba(255,255,255,0.6); }
+  .cta-inner { max-width: 480px; margin: 0 auto; }
+  .cta-price-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .cta-was { font-size: 16px; color: rgba(255,255,255,0.35); text-decoration: line-through; }
+  .cta-now { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: var(--gold); line-height: 1; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 12px;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+
+  /* ── PULSE ANIMATION ── */
+  @keyframes pulse-gold {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(201,168,76,0.4); }
+    50% { box-shadow: 0 0 0 10px rgba(201,168,76,0); }
+  }
+  .btn-pulse { animation: pulse-gold 2.2s ease-in-out infinite; }
+
+  /* ── TIMER ── */
+  .timer-bar {
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .timer-label { font-size: 12px; color: var(--gray); margin-bottom: 4px; }
+  .timer-count { font-size: 22px; font-weight: 700; color: var(--red); letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  ⚡ Special one-time offer — this page will NOT appear again · <span>This upgrade is only available right now</span>
+</div>
+
+<!-- STEP INDICATOR -->
+<div class="steps">
+  <div class="step done">
+    <div class="step-num">✓</div>
+    <span class="step-label">Order placed</span>
+  </div>
+  <div class="step-sep"></div>
+  <div class="step active">
+    <div class="step-num">2</div>
+    <span class="step-label">Special upgrade</span>
+  </div>
+  <div class="step-sep"></div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <span class="step-label">Access your downloads</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">✦ Exclusive one-time upgrade ✦</div>
+  <h1>
+    Your E-Book Rewires Your Mind.<br>
+    These Audios <em>Reprogram It While You Sleep.</em>
+  </h1>
+  <p class="hero-sub">Add the Magnetic Audio Suite — 7 guided meditations designed to go deeper than any written exercise can reach.</p>
+</section>
+
+<!-- PRODUCT REVEAL -->
+<div class="container">
+  <div class="product-reveal">
+    <div class="product-header">
+      <div class="product-icon">🎧</div>
+      <div class="product-header-text">
+        <h2>Magnetic Audio Suite</h2>
+        <p>7 guided meditations · Total 84 minutes · MP3 instant download</p>
+      </div>
+    </div>
+    <div class="product-body">
+      <div class="tracks-grid">
+        <div class="track-card">
+          <div class="track-num">01</div>
+          <div class="track-info">
+            <h4>The Morning Activation</h4>
+            <p>Start each day in your highest frequency — energized and magnetic.</p>
+            <div class="track-duration">9 MIN</div>
+          </div>
+        </div>
+        <div class="track-card">
+          <div class="track-num">02</div>
+          <div class="track-info">
+            <h4>Subconscious Reprogramming</h4>
+            <p>Deep theta-state meditation to dissolve limiting beliefs at the root.</p>
+            <div class="track-duration">18 MIN</div>
+          </div>
+        </div>
+        <div class="track-card">
+          <div class="track-num">03</div>
+          <div class="track-info">
+            <h4>Abundance Frequency Reset</h4>
+            <p>Align your energy to the feeling of already having what you want.</p>
+            <div class="track-duration">14 MIN</div>
+          </div>
+        </div>
+        <div class="track-card">
+          <div class="track-num">04</div>
+          <div class="track-info">
+            <h4>Self-Worth Activation</h4>
+            <p>The most common block to manifestation — dissolved in 12 minutes.</p>
+            <div class="track-duration">12 MIN</div>
+          </div>
+        </div>
+        <div class="track-card">
+          <div class="track-num">05</div>
+          <div class="track-info">
+            <h4>Love Magnetism</h4>
+            <p>Open your heart frequency to give and receive love without fear.</p>
+            <div class="track-duration">11 MIN</div>
+          </div>
+        </div>
+        <div class="track-card">
+          <div class="track-num">06</div>
+          <div class="track-info">
+            <h4>The Deep Release</h4>
+            <p>Let go of attachment, control, and resistance — and finally exhale.</p>
+            <div class="track-duration">13 MIN</div>
+          </div>
+        </div>
+        <div class="track-card" style="grid-column: 1 / -1;">
+          <div class="track-num">07</div>
+          <div class="track-info">
+            <h4>Sleep Manifestation — The Overnight Reset</h4>
+            <p>A 7-minute pre-sleep audio that programs your subconscious while you drift off. The most powerful track in the suite — your brain is most receptive right before sleep.</p>
+            <div class="track-duration">7 MIN · SLEEP</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIMER -->
+      <div class="timer-bar">
+        <div class="timer-label">This offer expires in</div>
+        <div class="timer-count" id="timer">14:59</div>
+      </div>
+
+      <!-- PRICE + CTA -->
+      <div class="price-block">
+        <div class="price-left">
+          <div class="price-was">Regular price: $97</div>
+          <div class="price-now">$27</div>
+          <div class="price-note">One-time add-on · Instant MP3 download</div>
+        </div>
+        <div style="flex:1; min-width:200px;">
+          <button class="btn-yes btn-pulse" onclick="window.location.href='thank-you.html'">
+            Yes — Add The Audio Suite →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY AUDIO -->
+<section class="why">
+  <div class="container">
+    <p class="section-label">Why audio works differently</p>
+    <h2 class="section-title">Your Brain on Guided Meditation</h2>
+    <div class="gold-divider"></div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🧠</div>
+        <h3>Theta State Access</h3>
+        <p>Guided meditation drops your brainwaves into theta — the same state where childhood programming was installed. It's the only reliable way to reach it consciously.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌙</div>
+        <h3>Sleep Programming</h3>
+        <p>The 20 minutes before sleep is the most potent reprogramming window of the day. Track 07 is specifically designed for this moment — it works while you do nothing.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Faster Results</h3>
+        <p>Reading rewires the conscious mind. Audio reaches the subconscious. Together, they work on every layer of your being — accelerating everything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE -->
+<section class="science">
+  <div class="container">
+    <p class="section-label">The science behind it</p>
+    <h2 class="section-title" style="text-align:left; margin-bottom:12px;">Why the e-book alone isn't enough</h2>
+    <div style="width:60px; height:2px; background:var(--gold); border-radius:2px; margin-bottom:28px;"></div>
+    <p class="body-text">Reading is a left-brain activity. It engages your analytical, critical, conscious mind — the part that filters, debates, and doubts. That is why you can read an affirmation and immediately think, "But that's not true for me."</p>
+    <p class="body-text">Guided meditation bypasses the critical filter. When you are in a relaxed, eyes-closed state with a calm voice guiding your awareness, your brain enters theta waves (4–8 Hz) — the same state you're in just before sleep and just after waking. In theta, the subconscious is wide open, receptive, and ready to accept new programming without resistance.</p>
+    <blockquote class="pull">
+      "In theta, you are not trying to change a belief. You are installing one."
+    </blockquote>
+    <p class="body-text">The Magnetic Audio Suite was created specifically to pair with the 21-Day Method. Each track targets one of the core blocks the e-book addresses — so instead of working through them intellectually, you dissolve them experientially. The two together are not twice as powerful. They are ten times as powerful.</p>
+  </div>
+</section>
+
+<!-- CTA BOTTOM -->
+<section class="cta-bottom">
+  <div class="cta-inner">
+    <h2>Add the Audio Suite Now<br>— Before This Page Closes</h2>
+    <p>This is a one-time offer. Once you leave this page, this upgrade goes back to full price and may not be available again.</p>
+    <div class="cta-price-row">
+      <span class="cta-was">$97</span>
+      <span class="cta-now">$27</span>
+    </div>
+    <button class="btn-yes btn-pulse" onclick="window.location.href='thank-you.html'" style="font-size:17px; padding:18px 36px;">
+      Yes — Add The Audio Suite for $27 →
+    </button>
+    <a class="skip-link" href="thank-you.html">No thanks — I'll continue without the audio upgrade</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Magnetic Life Method · <a href="#">Privacy Policy</a> · <a href="#">Contact</a></p>
+  <p style="margin-top:6px;">Questions? hello@magneticlifemethod.com</p>
+</footer>
+
+<script>
+  // Countdown timer
+  let seconds = 14 * 60 + 59;
+  const el = document.getElementById('timer');
+  const tick = () => {
+    if (seconds <= 0) { el.textContent = '00:00'; return; }
+    seconds--;
+    const m = Math.floor(seconds / 60).toString().padStart(2,'0');
+    const s = (seconds % 60).toString().padStart(2,'0');
+    el.textContent = m + ':' + s;
+    setTimeout(tick, 1000);
+  };
+  tick();
+</script>
+</body>
+</html>

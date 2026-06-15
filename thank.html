@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're In! Access Your Downloads | Magnetic Life Method</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --purple:      #7B5EA7;
+    --purple-dark: #4A3468;
+    --purple-light:#EDE8F5;
+    --gold:        #C9A84C;
+    --gold-light:  #FDF6E3;
+    --cream:       #FAF8F4;
+    --dark:        #1C1C2E;
+    --gray:        #6B6B7A;
+    --white:       #FFFFFF;
+    --green:       #1A7A4A;
+    --green-light: #E6F5ED;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    line-height: 1.7;
+  }
+
+  /* ── STEP INDICATOR ── */
+  .steps {
+    background: #fff;
+    border-bottom: 1px solid var(--purple-light);
+    padding: 14px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+  }
+  .step { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--gray); }
+  .step.done .step-num { background: var(--green); color: #fff; }
+  .step-num {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--purple-light); color: var(--purple);
+    font-weight: 700; font-size: 11px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .step-label { font-weight: 500; }
+  .step.done .step-label { color: var(--green); }
+  .step-sep { width: 40px; height: 1px; background: var(--purple-light); margin: 0 8px; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(155deg, #1A4A2E 0%, #2D7A50 55%, #1A7A4A 100%);
+    color: #fff;
+    text-align: center;
+    padding: 60px 24px 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 480px; height: 480px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.08);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+  .confirm-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+  }
+  .confirm-badge .check { color: #6EE5A0; font-size: 16px; }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 4.5vw, 52px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .hero h1 em { font-style: italic; color: #A8F0C6; }
+  .hero-sub {
+    font-size: clamp(14px, 2vw, 17px);
+    color: rgba(255,255,255,0.75);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* ── CONTAINER ── */
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* ── DOWNLOADS CARD ── */
+  .downloads-card {
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid var(--purple-light);
+    max-width: 700px;
+    margin: -52px auto 0;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(74,52,104,0.10);
+  }
+  .downloads-header {
+    background: var(--purple-dark);
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .downloads-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .downloads-header p { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 2px; }
+  .secure-badge {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .downloads-body { padding: 24px 28px; }
+  .download-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--purple-light);
+  }
+  .download-row:last-child { border-bottom: none; }
+  .download-icon {
+    width: 44px; height: 44px;
+    background: var(--purple-light);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .download-info { flex: 1; }
+  .download-info h3 { font-size: 15px; font-weight: 600; color: var(--purple-dark); margin-bottom: 2px; }
+  .download-info p { font-size: 12px; color: var(--gray); }
+  .download-info .tag-bonus {
+    display: inline-block;
+    background: var(--gold-light);
+    color: #8A6520;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--purple-dark);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 100px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+    flex-shrink: 0;
+  }
+  .btn-download:hover { background: var(--purple); }
+  .btn-download-gold {
+    background: var(--gold);
+    color: var(--purple-dark);
+  }
+  .btn-download-gold:hover { background: #B8943E; }
+
+  /* ── EMAIL NOTE ── */
+  .email-note {
+    background: var(--green-light);
+    border: 1px solid rgba(26,122,74,0.2);
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 24px 0 0;
+  }
+  .email-note-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+  .email-note p { font-size: 13px; color: var(--green); line-height: 1.6; }
+  .email-note strong { font-weight: 600; }
+
+  /* ── START GUIDE ── */
+  .start-guide { padding: 60px 24px; background: #fff; }
+  .section-label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--gold); text-align: center; margin-bottom: 10px;
+  }
+  h2.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 3.5vw, 36px);
+    font-weight: 700; line-height: 1.2;
+    text-align: center; color: var(--purple-dark);
+    margin-bottom: 14px;
+  }
+  .gold-divider { width: 60px; height: 2px; background: var(--gold); margin: 0 auto 40px; border-radius: 2px; }
+  .steps-list { display: flex; flex-direction: column; gap: 0; }
+  .start-step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--purple-light);
+  }
+  .start-step:last-child { border-bottom: none; }
+  .start-step-num {
+    width: 40px; height: 40px;
+    background: var(--purple-dark);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .start-step-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--purple-dark);
+    margin-bottom: 4px;
+  }
+  .start-step-content p { font-size: 14px; color: var(--gray); line-height: 1.7; }
+
+  /* ── COMMUNITY ── */
+  .community { padding: 60px 24px; background: var(--purple-dark); text-align: center; }
+  .community h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 3.5vw, 34px);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .community p { color: rgba(255,255,255,0.65); font-size: 15px; max-width: 500px; margin: 0 auto 32px; }
+  .share-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: none;
+    font-family: 'Inter', sans-serif;
+  }
+  .share-btn:hover { transform: translateY(-2px); }
+  .share-ig { background: linear-gradient(135deg, #E1306C, #833AB4); color: #fff; }
+  .share-fb { background: #1877F2; color: #fff; }
+  .share-tw { background: #1DA1F2; color: #fff; }
+
+  /* ── AFFIRMATION CLOSER ── */
+  .affirmation-closer {
+    padding: 80px 24px;
+    background: var(--cream);
+    text-align: center;
+  }
+  .aff-symbol { font-size: 28px; margin-bottom: 16px; }
+  blockquote.closing {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(18px, 3vw, 26px);
+    color: var(--purple-dark);
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  .closing-author {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 12px;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+  footer .footer-logo { font-family: 'Playfair Display', serif; font-size: 18px; color: #fff; margin-bottom: 8px; }
+
+  /* ── CONFETTI ANIMATION ── */
+  .confetti-wrap {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  .confetti-piece {
+    position: absolute;
+    width: 8px; height: 8px;
+    top: -10px;
+    border-radius: 2px;
+    opacity: 0;
+    animation: fall linear forwards;
+  }
+  @keyframes fall {
+    0%   { opacity: 1; transform: translateY(0) rotate(0deg); }
+    100% { opacity: 0; transform: translateY(100vh) rotate(720deg); }
+  }
+
+  @media (max-width: 520px) {
+    .downloads-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .download-row { flex-wrap: wrap; }
+    .btn-download { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- CONFETTI -->
+<div class="confetti-wrap" id="confetti"></div>
+
+<!-- STEP INDICATOR -->
+<div class="steps">
+  <div class="step done">
+    <div class="step-num">✓</div>
+    <span class="step-label">Order placed</span>
+  </div>
+  <div class="step-sep"></div>
+  <div class="step done">
+    <div class="step-num">✓</div>
+    <span class="step-label">Upgrade</span>
+  </div>
+  <div class="step-sep"></div>
+  <div class="step done">
+    <div class="step-num">✓</div>
+    <span class="step-label">Access your downloads</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="confirm-badge">
+      <span class="check">✓</span>
+      Payment confirmed · Order #MLM-<span id="order-num">28417</span>
+    </div>
+    <h1>
+      Welcome to Your<br>
+      <em>Magnetic Life.</em>
+    </h1>
+    <p class="hero-sub">Your downloads are ready below. Your reset starts today — and we could not be more excited for what's coming for you.</p>
+  </div>
+</section>
+
+<!-- DOWNLOADS CARD -->
+<div class="container" style="padding-bottom: 0;">
+  <div class="downloads-card">
+    <div class="downloads-header">
+      <div>
+        <h2>Your Downloads</h2>
+        <p>Click each button to download — save to your phone or computer</p>
+      </div>
+      <div class="secure-badge">🔒 Secure</div>
+    </div>
+    <div class="downloads-body">
+
+      <div class="download-row">
+        <div class="download-icon">📖</div>
+        <div class="download-info">
+          <h3>Magnetic Life Method — Main E-Book</h3>
+          <p>PDF · 65+ pages · The complete 21-day method</p>
+        </div>
+        <a href="Magnetic_Life_Method_Ebook.pdf" download class="btn-download btn-download-gold">
+          ↓ Download
+        </a>
+      </div>
+
+      <div class="download-row">
+        <div class="download-icon">📓</div>
+        <div class="download-info">
+          <h3>21-Day Manifestation Journal</h3>
+          <p>PDF · 21 pages · One guided journal page per day</p>
+        </div>
+        <a href="#" class="btn-download">↓ Download</a>
+      </div>
+
+      <div class="download-row">
+        <div class="download-icon">📅</div>
+        <div class="download-info">
+          <h3>21-Day Ritual Tracker</h3>
+          <p>PDF · Printable daily checklist</p>
+        </div>
+        <a href="#" class="btn-download">↓ Download</a>
+      </div>
+
+      <div class="download-row">
+        <div class="download-icon">🃏</div>
+        <div class="download-info">
+          <h3>Affirmation Card Deck <span class="tag-bonus">BONUS</span></h3>
+          <p>PDF · 30 printable cards</p>
+        </div>
+        <a href="#" class="btn-download">↓ Download</a>
+      </div>
+
+      <div class="download-row" id="audio-row" style="display:none;">
+        <div class="download-icon">🎧</div>
+        <div class="download-info">
+          <h3>Magnetic Audio Suite <span class="tag-bonus">UPGRADE</span></h3>
+          <p>7 MP3 files · 84 minutes total · Zip archive</p>
+        </div>
+        <a href="#" class="btn-download btn-download-gold">↓ Download</a>
+      </div>
+
+      <div class="email-note">
+        <div class="email-note-icon">📬</div>
+        <p><strong>A copy of your downloads has been sent to your email.</strong> Check your inbox (and spam folder, just in case). You'll have lifetime access to these files — they're yours forever.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- START GUIDE -->
+<section class="start-guide">
+  <div class="container">
+    <p class="section-label">You're all set — here's what to do next</p>
+    <h2 class="section-title">How to Get the Most Out of This</h2>
+    <div class="gold-divider"></div>
+    <div class="steps-list">
+      <div class="start-step">
+        <div class="start-step-num">1</div>
+        <div class="start-step-content">
+          <h3>Download everything now</h3>
+          <p>Save all files to your phone or a folder on your computer. We recommend creating a dedicated folder called "Magnetic Life Method" so everything stays together and you can find it easily.</p>
+        </div>
+      </div>
+      <div class="start-step">
+        <div class="start-step-num">2</div>
+        <div class="start-step-content">
+          <h3>Start with the Introduction tonight</h3>
+          <p>Read the "Why Your Manifestation Isn't Working" section before bed tonight. It takes 10 minutes and will reframe everything. Tomorrow morning, you begin Day 1.</p>
+        </div>
+      </div>
+      <div class="start-step">
+        <div class="start-step-num">3</div>
+        <div class="start-step-content">
+          <h3>Print your Tracker (or keep it on your phone)</h3>
+          <p>Having a physical or visible tracker dramatically increases follow-through. Put it somewhere you'll see it every morning — your fridge, your desk, your bathroom mirror.</p>
+        </div>
+      </div>
+      <div class="start-step">
+        <div class="start-step-num">4</div>
+        <div class="start-step-content">
+          <h3>Block 10 minutes every morning</h3>
+          <p>Set a daily alarm for your practice. Protect it like a meeting you cannot miss — because the most important appointment you have is the one with yourself. The 21 days will pass whether or not you do this. Make them count.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="community">
+  <div class="container">
+    <h2>Share Your Journey ✦</h2>
+    <p>Tag us when you start your 21 days — we love seeing our community show up for themselves. Your story might be the sign someone else needed today.</p>
+    <div class="share-row">
+      <a href="https://instagram.com" target="_blank" class="share-btn share-ig">
+        📸 Share on Instagram
+      </a>
+      <a href="https://facebook.com" target="_blank" class="share-btn share-fb">
+        📘 Share on Facebook
+      </a>
+      <a href="https://twitter.com" target="_blank" class="share-btn share-tw">
+        🐦 Share on Twitter
+      </a>
+    </div>
+    <p style="margin-top:20px; font-size:12px; color:rgba(255,255,255,0.3);">Use #MagneticLifeMethod · @magneticlifemethod</p>
+  </div>
+</section>
+
+<!-- AFFIRMATION CLOSER -->
+<section class="affirmation-closer">
+  <div class="aff-symbol">✦</div>
+  <blockquote class="closing">
+    "You are not starting a program. You are remembering who you already are — someone who is worthy, magnetic, and capable of creating a life that takes your breath away."
+  </blockquote>
+  <p class="closing-author">— The Magnetic Life Method Team</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">✦ Magnetic Life Method</div>
+  <p>magneticlifemethod.com · <a href="#">Privacy Policy</a> · <a href="#">Contact</a></p>
+  <p style="margin-top:6px;">Questions about your order? hello@magneticlifemethod.com</p>
+  <p style="margin-top:6px;">© 2025 Magnetic Life Method. All rights reserved.</p>
+</footer>
+
+<script>
+  // Random order number
+  document.getElementById('order-num').textContent =
+    Math.floor(10000 + Math.random() * 89999);
+
+  // Show audio row if came from upsell (check referrer or URL param)
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('audio') === '1') {
+    document.getElementById('audio-row').style.display = 'flex';
+  }
+
+  // Confetti burst on load
+  const colors = ['#7B5EA7','#C9A84C','#4A3468','#EDE8F5','#fff','#C9A84C'];
+  const confettiEl = document.getElementById('confetti');
+  for (let i = 0; i < 60; i++) {
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.left = Math.random() * 100 + 'vw';
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.width = (6 + Math.random() * 8) + 'px';
+    piece.style.height = (6 + Math.random() * 8) + 'px';
+    piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+    piece.style.animationDuration = (1.5 + Math.random() * 2.5) + 's';
+    piece.style.animationDelay = (Math.random() * 0.8) + 's';
+    confettiEl.appendChild(piece);
+  }
+  setTimeout(() => confettiEl.remove(), 5000);
+</script>
+</body>
+</html>
