@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Antonio Broker — O Melhor Vendedor do Mundo</title>
+<meta name="description" content="Método de Antonio Broker para vender todos os dias no digital usando conversas 1x1 no WhatsApp. Direto ao ponto, sem promessas exageradas." />
+<meta property="og:title" content="Antonio Broker — O Melhor Vendedor do Mundo" />
+<meta property="og:description" content="Aprenda a vender todo dia no automático com o método de Antonio Broker. Inscreva-se por R$49,90." />
+<style>
+  :root{
+    --green:#3eb900;
+    --green-dark:#298700;
+    --lime:#c8ffaf;
+    --bg:#000;
+    --card:#0a0a0a;
+    --border:#1a1a1a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .progress{width:100%;height:8px;background:#99cc33}
+  .wrap{max-width:36rem;margin:0 auto;padding:20px 16px;display:flex;flex-direction:column;align-items:center}
+  .logo{width:96px;height:auto;margin-bottom:20px;filter:drop-shadow(0 4px 20px rgba(62,185,0,.25))}
+  h1.headline{text-align:center;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;font-size:30px;color:var(--lime);margin:0 0 24px}
+  .video-frame{width:100%;max-width:24rem;margin-bottom:24px;border-radius:18px;padding:2px;background:linear-gradient(135deg,var(--green),var(--lime))}
+  .video-inner{border-radius:16px;overflow:hidden;background:#000}
+  .video{position:relative;width:100%;aspect-ratio:9/16;background:#171717;display:flex;align-items:center;justify-content:center;flex-direction:column;cursor:pointer}
+  .video.wide{aspect-ratio:16/9}
+  .play-btn{width:80px;height:80px;border-radius:14px;background:var(--green);display:flex;align-items:center;justify-content:center;animation:pulse 2s infinite}
+  .play-btn svg{width:40px;height:40px;fill:#fff;margin-left:4px}
+  .play-label{color:#fff;font-size:14px;font-weight:700;margin-top:12px}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.7}}
+  .cta{display:block;width:100%;text-align:center;font-weight:800;text-transform:uppercase;border-radius:12px;padding:16px;font-size:14px;letter-spacing:1px;color:#fff;background:var(--green);box-shadow:0 6px 0 var(--green-dark);transition:background .15s,transform .05s;border:none;cursor:pointer}
+  .cta:hover{background:#1b6700}
+  .cta:active{transform:scale(.98)}
+  section.block{width:100%;margin-top:64px}
+  h2.title{text-align:center;font-weight:800;font-size:28px;letter-spacing:-.01em;color:var(--lime);margin:0 0 24px}
+  .mentor{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px}
+  .mentor p{color:#e5e5e5;font-size:16px;line-height:1.6;margin:0 0 16px}
+  .mentor p:last-child{margin-bottom:0}
+  .mentor b{color:#fff}
+  .lead{text-align:center;color:#d4d4d4;font-size:16px;margin:-12px 0 28px}
+  .testimonials{display:grid;grid-template-columns:1fr;gap:16px}
+  .tcard{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px}
+  .trow{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .avatar{width:44px;height:44px;border-radius:50%;background:var(--lime);color:#000;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+  .tname{font-weight:800;color:var(--lime);font-size:15px;line-height:1.1}
+  .trole{color:#a3a3a3;font-size:12px;margin-top:2px}
+  .tquote{color:#fafafa;font-weight:600;font-size:15px;line-height:1.4;margin:0}
+  .results{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+  .result{aspect-ratio:3/4;border-radius:10px;background:#0d0d0d;border:1px solid #1f1f1f;color:#525252;font-size:12px;display:flex;align-items:center;justify-content:center;padding:8px;text-align:center}
+  .features{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+  .feat{display:flex;align-items:flex-start;gap:12px;background:#0d0d0d;border:1px solid #1f1f1f;border-radius:12px;padding:14px}
+  .check{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--lime);color:#000;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;margin-top:2px}
+  .feat span:last-child{color:#f5f5f5;font-size:15px;line-height:1.35}
+  .feat-sub{text-align:center;color:#e5e5e5;font-weight:600;font-size:16px;margin:-12px 0 24px}
+  .guarantee-pill{display:inline-block;background:var(--lime);color:#000;font-weight:800;padding:8px 22px;border-radius:999px;font-size:14px;margin-bottom:14px}
+  .center{text-align:center}
+  .price{font-weight:800;font-size:56px;color:var(--lime);margin:8px 0}
+  .price-sub{color:#a3a3a3;font-size:14px;margin-bottom:24px}
+  .deadline{color:#a3a3a3;text-transform:uppercase;font-weight:700;margin-top:36px;font-size:13px;letter-spacing:1px}
+  .deadline-date{font-weight:800;font-size:20px;color:var(--lime);margin-top:4px}
+  .disclaimer{color:#737373;font-size:12px;line-height:1.6;margin:0}
+  .copyright{color:#525252;font-size:12px;margin-top:24px}
+  @media (min-width:640px){
+    .logo{width:112px}
+    h1.headline{font-size:42px}
+    h2.title{font-size:34px}
+    .testimonials{grid-template-columns:1fr 1fr}
+    .wrap{padding:32px 16px}
+  }
+</style>
+</head>
+<body>
+  <div class="progress"></div>
+  <main class="wrap">
+    <img class="logo" src="logo-melhor-vendedor.png" alt="O Melhor Vendedor do Mundo - Antonio Broker" width="1024" height="1024" />
+
+    <h1 class="headline">NÃO SOU NENHUM<br/>GURU DO DIGITAL!</h1>
+
+    <div class="video-frame">
+      <div class="video-inner">
+        <div class="video" onclick="this.innerHTML='<div style=color:#a3a3a3;font-size:14px>Vídeo em breve</div>'">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="none" stroke="#fff" stroke-width="2"/><path d="M10 8l6 4-6 4V8z"/></svg></div>
+          <div class="play-label">Clique para ouvir</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#checkout" class="cta">QUERO ME INSCREVER AGORA! POR R$49,90</a>
+
+    <section class="block">
+      <h2 class="title">Quem é seu mentor?</h2>
+      <div class="mentor">
+        <p>Me chamo <b>Antonio Broker</b>, e meu foco é mostrar um caminho simples e real para pessoas comuns começarem a vender todos os dias no digital. Sem aparecer, sem precisar investir alto e sem depender de promessas exageradas.</p>
+        <p>Você está a um passo de entender como funcionam as vendas de produtos low ticket usando conversas 1x1 no WhatsApp e uma automação simples com bot. Uma estratégia prática, acessível e construída para quem quer resultado sem complicação.</p>
+        <p>Se você chegou até aqui, existe um motivo. E esse pode ser exatamente o impulso que faltava para você dar o próximo passo e começar a vender todo dia no automático.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="title">Não funciona só pra mim</h2>
+      <p class="lead">Veja membros da comunidade que aplicaram o método</p>
+      <div class="testimonials">
+        <div class="tcard"><div class="trow"><div class="avatar">V</div><div><div class="tname">VINÍCIUS</div><div class="trole">Ex-operário de fábrica</div></div></div><p class="tquote">“Largou o CLT e faturou R$300k em menos de 2 meses”</p></div>
+        <div class="tcard"><div class="trow"><div class="avatar">J</div><div><div class="tname">JOÃO</div><div class="trole">Estava desempregado</div></div></div><p class="tquote">“Saiu de R$70 reais para R$1.000 por dia no X1”</p></div>
+        <div class="tcard"><div class="trow"><div class="avatar">I</div><div><div class="tname">IGOR</div><div class="trole">Começou do zero</div></div></div><p class="tquote">“De zero a R$18k/mês em 6 semanas”</p></div>
+        <div class="tcard"><div class="trow"><div class="avatar">L</div><div><div class="tname">LEANDRO</div><div class="trole">De Moçambique</div></div></div><p class="tquote">“Largou o CLT e faturou R$300k em menos de 2 meses”</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="title">Quando você aplica, o retorno aparece</h2>
+      <p class="lead">Provas reais de quem aplicou o processo e colheu os frutos.</p>
+      <div class="results">
+        <div class="result">Print de venda #1</div><div class="result">Print de venda #2</div>
+        <div class="result">Print de venda #3</div><div class="result">Print de venda #4</div>
+        <div class="result">Print de venda #5</div><div class="result">Print de venda #6</div>
+        <div class="result">Print de venda #7</div><div class="result">Print de venda #8</div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="title">Veja o que você irá encontrar lá dentro!</h2>
+      <p class="feat-sub">Tudo do ZERO ao AVANÇADO para você começar no X1</p>
+      <ul class="features">
+        <li class="feat"><span class="check">✓</span><span>Tudo do ZERO ao AVANÇADO para você começar no X1</span></li>
+        <li class="feat"><span class="check">✓</span><span>Como gerar vendas automáticas usando nosso Robô Automático no WhatsApp</span></li>
+        <li class="feat"><span class="check">✓</span><span>Estratégia para anunciar barato no Facebook/Instagram</span></li>
+        <li class="feat"><span class="check">✓</span><span>Como escalar de forma inteligente (sem queimar orçamento)</span></li>
+        <li class="feat"><span class="check">✓</span><span>Funil validado para acelerar seus resultados</span></li>
+        <li class="feat"><span class="check">✓</span><span>Os truques e sacadas que destravam resultados no X1 do WhatsApp</span></li>
+        <li class="feat"><span class="check">✓</span><span>Do zero a sua primeira venda em menos de 7 dias (passo a passo real)</span></li>
+      </ul>
+    </section>
+
+    <section class="block center">
+      <div class="guarantee-pill">30 DIAS DE GARANTIA!</div>
+      <h2 class="title" style="margin-bottom:16px">EU ASSUMO O RISCO!</h2>
+      <p style="color:#e5e5e5;font-size:16px;line-height:1.6;margin:0 0 12px">Se você aplicar o método, seguir as estratégias e não tiver resultados em até 30 dias, eu devolvo <b style="color:#fff">o dobro do valor investido no Método + 100 reais no Pix!</b></p>
+      <p style="color:#a3a3a3;font-size:14px;margin:0">Faço isso porque confio 100% no que ensino. Se você fizer a sua parte, o resultado vem!</p>
+    </section>
+
+    <section id="checkout" class="block center">
+      <h2 class="title" style="margin-bottom:12px">Comece hoje e aproveite o desconto especial!</h2>
+      <p style="color:#e5e5e5;font-size:16px;margin:0">Inscreva-se por apenas:</p>
+      <p class="price">R$ 49,90</p>
+      <p class="price-sub">(Ou 12x de R$ 5,11 no cartão de crédito)</p>
+      <p style="color:#e5e5e5;font-size:15px;margin:0 0 20px">Se inscrevendo agora você garante o acesso ao método e aos bônus exclusivos!</p>
+      <a href="#checkout" class="cta">QUERO ME INSCREVER!</a>
+      <p class="deadline">Essa oferta encerra em:</p>
+      <p class="deadline-date">30 de junho</p>
+    </section>
+
+    <section class="block center" style="margin-bottom:24px">
+      <p class="disclaimer">Eu valorizo um trabalho sério e transparente. Os resultados que compartilho mostram o que é possível quando se aplica informação correta com consistência. No entanto, deixo claro: meus números não são comuns nem garantem que você terá os mesmos de forma rápida ou sem esforço. Cada pessoa avança no seu próprio ritmo, e o resultado depende do comprometimento de cada um.</p>
+      <p class="copyright">© 2026 Antonio Broker. Todos os direitos reservados.</p>
+    </section>
+  </main>
+</body>
+</html>
