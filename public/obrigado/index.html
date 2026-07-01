@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>TikTok — Solicitud recibida</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800;900&display=swap');
+    body{font-family:'Figtree',sans-serif;background:#fff;margin:0;min-height:100vh;}
+    .tiktok-bounce{animation:bounceTiktok 2s infinite ease-in-out alternate;}
+    @keyframes bounceTiktok{from{transform:scale(1) rotate(-2deg);}to{transform:scale(1.08) rotate(2deg);}}
+    .tiktok-gradient{background:linear-gradient(to right,#FE2C55 0%,#25F4EE 50%,#FE2C55 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:flowing 3s linear infinite;}
+    @keyframes flowing{to{background-position:200% center;}}
+    .pulse-dot{width:10px;height:10px;border-radius:9999px;background:#1DB954;display:inline-block;animation:pulseDot 1.5s infinite;box-shadow:0 0 0 0 rgba(29,185,84,.6);}
+    @keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(29,185,84,.6);}70%{box-shadow:0 0 0 12px rgba(29,185,84,0);}100%{box-shadow:0 0 0 0 rgba(29,185,84,0);}}
+    .check-pop{animation:checkPop .6s cubic-bezier(.2,.9,.3,1.4) both;}
+    @keyframes checkPop{from{transform:scale(.4);opacity:0;}to{transform:scale(1);opacity:1;}}
+    .alert-stripe{background:#FE2C55;}
+  </style>
+</head>
+<body class="flex flex-col items-center">
+
+  <!-- Faixa de atenção topo (estilo da referência) -->
+  <div class="alert-stripe w-full text-center py-3 px-4">
+    <p class="text-white font-black text-[13px] leading-tight tracking-tight uppercase">
+      ⚠ Importante: no cierres esta página hasta leer la información completa.
+    </p>
+  </div>
+
+  <main class="flex flex-col items-center w-full max-w-md p-6 text-center">
+
+    <img src="/front/images/p-saldo.svg" onerror="this.style.display='none'" class="hidden">
+
+    <!-- Logo TikTok -->
+    <img src="/back-redirect/images/tiktok-logo-png_seeklogo-368491.png" class="tiktok-bounce h-32 mt-6 mb-4" alt="TikTok">
+
+    <!-- Check de confirmação -->
+    <div class="check-pop bg-[#1DB954] rounded-full w-20 h-20 flex items-center justify-center mb-6 shadow-lg shadow-[#1DB954]/30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+      </svg>
+    </div>
+
+    <!-- Status -->
+    <div class="inline-flex items-center gap-2 bg-green-50 border border-green-200 rounded-full px-4 py-2 mb-5">
+      <span class="pulse-dot"></span>
+      <span class="text-[#1DB954] font-black text-xs uppercase tracking-widest">Solicitud confirmada</span>
+    </div>
+
+    <!-- Título -->
+    <h1 class="text-3xl font-black text-gray-900 leading-tight mb-4">
+      ¡Tu retiro fue <span class="tiktok-gradient">recibido con éxito!</span>
+    </h1>
+
+    <!-- Card principal com a copy -->
+    <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 p-6 w-full text-left mb-6">
+      <p class="text-gray-800 text-[15px] leading-relaxed font-semibold">
+        Debido a la <span class="text-[#FE2C55] font-black">alta demanda de retiros</span>,
+        tu solicitud será procesada en un plazo de
+        <span class="text-gray-900 font-black">hasta 7 días hábiles</span>.
+      </p>
+      <div class="h-px bg-gray-100 my-4"></div>
+      <ul class="space-y-3 text-sm text-gray-600">
+        <li class="flex items-start gap-3">
+          <span class="text-[#1DB954] font-black mt-0.5">✓</span>
+          <span>Tu pago está en la cola de procesamiento del equipo financiero de TikTok.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-[#1DB954] font-black mt-0.5">✓</span>
+          <span>Recibirás la transferencia directamente en el método elegido al solicitar el retiro.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-[#1DB954] font-black mt-0.5">✓</span>
+          <span>No es necesario realizar ninguna acción adicional de tu parte.</span>
+        </li>
+      </ul>
+    </div>
+
+
+    <p class="text-xs text-gray-400 italic mt-2 mb-10 px-4">
+      Agradecemos tu paciencia. El equipo de TikTok Pay está trabajando para liberar tu pago lo antes posible.
+    </p>
+
+  </main>
+
+</body>
+</html>

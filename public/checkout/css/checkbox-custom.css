@@ -1,0 +1,20 @@
+/* Checkbox customizado - forçar funcionamento */
+#noNumber {
+    position: relative;
+    background-color: white;
+    border: 2px solid var(--primary);
+    transition: all 0.2s ease;
+}
+
+#noNumber[data-state="checked"] {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+#noNumber .checkbox-check-icon {
+    z-index: 100 !important;
+}
+
+#noNumber[data-state="checked"] .checkbox-check-icon {
+    opacity: 1 !important;
+}

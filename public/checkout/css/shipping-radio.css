@@ -1,0 +1,31 @@
+/* Radio buttons de frete - forçar funcionamento */
+input[type="radio"][name="shipping"] {
+    position: relative;
+    background-color: white;
+    border: 2px solid var(--primary);
+    transition: all 0.2s ease;
+}
+
+input[type="radio"][name="shipping"]:checked {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+/* Ícone de check dentro do radio */
+input[type="radio"][name="shipping"] + span {
+    z-index: 100 !important;
+}
+
+input[type="radio"][name="shipping"]:checked + span {
+    opacity: 1 !important;
+}
+
+/* Garantir que o ícone seja branco quando marcado */
+input[type="radio"][name="shipping"]:checked + span svg {
+    color: white !important;
+}
+
+input[type="radio"][name="shipping"]:checked + span svg path {
+    fill: white !important;
+    stroke: white !important;
+}

@@ -1,0 +1,116 @@
+/* Correção para o carousel - garantir que os slides tenham altura e sejam visíveis */
+
+/* Container principal do carousel */
+.glide {
+    position: relative !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+}
+
+/* Track que contém os slides - DEVE ter overflow hidden para clipar slides fora da view */
+.glide__track {
+    overflow: hidden !important;
+    position: relative !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+    padding-left: 0 !important; /* Sem padding à esquerda para esconder slide anterior */
+    cursor: grab !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+}
+
+.glide__track:active {
+    cursor: grabbing !important;
+}
+
+/* Container dos slides - este elemento recebe o transform */
+.glide__slides {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    position: relative !important;
+    will-change: transform !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    height: auto !important;
+    gap: 10px !important; /* Espaçamento entre slides */
+}
+
+/* Cada slide individual */
+.glide__slide {
+    flex-shrink: 0 !important;
+    width: calc(100% - 40px) !important; /* 100% menos espaço para preview do próximo */
+    height: auto !important;
+    display: block !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    pointer-events: none !important; /* Previne cliques acidentais durante drag */
+}
+
+.glide__slide * {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+}
+
+/* Conteúdo interno de cada slide - FORÇAR visibilidade TOTAL */
+.glide__slide > div {
+    display: flex !important;
+    flex-direction: column !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+}
+
+/* CRITICAL: Force ALL elements inside slides to be visible */
+.glide__slide *,
+.glide__slide *::before,
+.glide__slide *::after {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* CRITICAL: Override any color/background that might make content invisible */
+.glide__slide div,
+.glide__slide p,
+.glide__slide h1,
+.glide__slide h2,
+.glide__slide h3,
+.glide__slide h4,
+.glide__slide h5,
+.glide__slide h6,
+.glide__slide span,
+.glide__slide img,
+.glide__slide svg {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* CRITICAL FIX: Override overflow-hidden on ALL nested elements */
+.glide__slide *[class*="overflow"] {
+    overflow: visible !important;
+}
+
+/* Make sure relative positioned elements don't hide content */
+.glide__slide .relative {
+    overflow: visible !important;
+}

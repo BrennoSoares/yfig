@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta name='robots' content='noindex, follow' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Page not found - Bizum</title>
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:title" content="Page not found - Bizum" />
+	<meta property="og:site_name" content="Bizum" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/bizum.com\/es\/#website","url":"https:\/\/bizum.com\/es\/","name":"Bizum","description":"Con Bizum puedes enviar y recibir dinero entre amigos, pagar en comercios online y donar a la ONG que tu elijas, todo desde tu móvil.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/bizum.com\/es\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Bizum &raquo; Feed" href="https://bizum.com/es/feed/" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<link rel='stylesheet' id='da-wp-swiper-slides-frontend-css' href='https://bizum.com/es/wp-content/plugins/wp-swiper/build/frontend.css?ver=1.4.3' media='all' />
+<link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css2?family=DM+Sans&#038;display=swap' media='all' />
+<link rel='stylesheet' id='style-default-css' href='https://bizum.com/es/wp-content/themes/bizum-wp2025/style.css?ver=1.0' media='all' />
+<script id="wpml-cookie-js-extra">
+var wpml_cookies = {"wp-wpml_current_language":{"value":"es","expires":1,"path":"/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"es","expires":1,"path":"/"}};
+//# sourceURL=wpml-cookie-js-extra
+</script>
+<script src="https://bizum.com/es/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=492100" id="wpml-cookie-js" defer data-wp-strategy="defer"></script>
+<script src="https://bizum.com/es/wp-content/plugins/wp-swiper/build/frontend.build.js?ver=1.4.3" id="da-wp-swiper-slides-frontend-js"></script>
+<script src="https://bizum.com/es/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://bizum.com/es/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://bizum.com/es/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bizum.com/es/xmlrpc.php?rsd" />
+<meta name="generator" content="WPML ver:4.9.2.1 stt:16,8,1,63,2;" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KRL484N');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, minimum-scale=0.8">
+  <noscript>
+    <style>
+      /**
+    * Reinstate scrolling for non-JS clients
+    */
+      .simplebar-content-wrapper {
+        scrollbar-width: auto;
+        -ms-overflow-style: auto;
+      }
+
+      .simplebar-content-wrapper::-webkit-scrollbar,
+      .simplebar-hide-scrollbar::-webkit-scrollbar {
+        display: initial;
+        width: initial;
+        height: initial;
+      }
+    </style>
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  </noscript>
+
+<link rel="icon" href="https://bizum.com/es/wp-content/uploads/2024/10/cropped-logo-positivo-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://bizum.com/es/wp-content/uploads/2024/10/cropped-logo-positivo-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://bizum.com/es/wp-content/uploads/2024/10/cropped-logo-positivo-300x300.png" />
+<meta name="msapplication-TileImage" content="https://bizum.com/es/wp-content/uploads/2024/10/cropped-logo-positivo-300x300.png" />
+
+</head>
+
+<body class="error404 wp-embed-responsive wp-theme-bizum-wp2025">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRL484N"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="site-header mb-2">
+
+  <div class="site-header__main">
+
+    
+<div class="site-header__logo-wrapper">
+      <a href="https://bizum.com/es" class="site-header__logo">
+      <img width="240" height="72" src="https://bizum.com/es/wp-content/uploads/2024/06/bizum-website-accessibility-logo.png" class="site-logo" alt="" decoding="async" />    </a>
+    <a id="site-header-accessibility-trigger" data-event="cta_accesibilidad" class="d-block fw-700 has-text-black-500-color has-xs-font-size link-accessibility" href="#">
+    Accesibilidad  </a>
+
+  <div class="site-header__menu-trigger">
+    <a data-event="menu_hamburguesa" href="#"><span></span></a>
+  </div>
+
+</div>
+  <div class="site-header__menu-wrapper">
+    
+  <div class="site-header__menu">
+    <nav class="site-header--nav site-header--nav-default"><ul id="main-menu" class="has-xs-font-size"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>Particulares<span class="mobile-submenu-trigger icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6.13298L1.21936 2.35235C0.940416 2.0734 0.488155 2.0734 0.209209 2.35235C-0.0697365 2.63129 -0.0697365 3.08355 0.209209 3.3625L4.49492 7.64821C4.77387 7.92716 5.22613 7.92716 5.50508 7.64821L9.79079 3.3625C10.0697 3.08355 10.0697 2.63129 9.79079 2.35235C9.51184 2.0734 9.05958 2.0734 8.78064 2.35235L5 6.13298Z" fill="#202020"/>
+  </svg>  </span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/como-funciona/">Cómo funciona <span class="menu-item-description d-block has-xs-font-size">Descubre cómo utilizar Bizum</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/bancos/">Entidades bancarias <span class="menu-item-description d-block has-xs-font-size">Conoce qué bancos tienen Bizum</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/enviar-y-recibir-dinero/">Enviar y recibir dinero <span class="menu-item-description d-block has-xs-font-size">Paga al instante para estar al día con tus amigos y familia</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/compra-online/">Compra online <span class="menu-item-description d-block has-xs-font-size">Realiza pagos en nuestros comercios asociados</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/identificador-digital/">Identificador digital <span class="menu-item-description d-block has-xs-font-size">Regístrate y entra en webs y apps</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/pagos-y-compras-presenciales/">Compra y pago presenciales <span class="menu-item-description d-block has-xs-font-size">Conoce qué bancos tienen Bizum</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/menores/">Bizum para menores <span class="menu-item-description d-block has-xs-font-size">Porque también merecen disfrutar de nuestras ventajas</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/seguridad/">Seguridad y protección <span class="menu-item-description d-block has-xs-font-size">Descubre qué nos hace seguros</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/internacional/">Pagos internacionales <span class="menu-item-description d-block has-xs-font-size">Envía y recibe dinero de clientes de otras soluciones internacionales</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://labizumeria.com/">La Bizumería <span class="menu-item-description d-block has-xs-font-size">La tienda online de Bizum molona, sostenible y responsable</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Empresas<span class="mobile-submenu-trigger icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6.13298L1.21936 2.35235C0.940416 2.0734 0.488155 2.0734 0.209209 2.35235C-0.0697365 2.63129 -0.0697365 3.08355 0.209209 3.3625L4.49492 7.64821C4.77387 7.92716 5.22613 7.92716 5.50508 7.64821L9.79079 3.3625C10.0697 3.08355 10.0697 2.63129 9.79079 2.35235C9.51184 2.0734 9.05958 2.0734 8.78064 2.35235L5 6.13298Z" fill="#202020"/>
+  </svg>  </span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/bizum-empresas/">¿Eres una empresa? <span class="menu-item-description d-block has-xs-font-size">Descubre lo que ofrece Bizum</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/metodo-de-pago-online/">Aceptar pagos online <span class="menu-item-description d-block has-xs-font-size">¿Cómo aceptar pagos realizados con Bizum?</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/integra-el-identificador/">Integra el identificador <span class="menu-item-description d-block has-xs-font-size">Facilita la identificación en tu web o app</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/pagar-promociones-premios-o-reembolsos/">Paga promociones, premios o reembolsos <span class="menu-item-description d-block has-xs-font-size">Una nueva forma de pagar en tu empresa</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/cobro-presencial-y-profesionales/">Cobro presencial y para profesionales <span class="menu-item-description d-block has-xs-font-size">También tenemos soluciones para tu día a día</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Donación<span class="mobile-submenu-trigger icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6.13298L1.21936 2.35235C0.940416 2.0734 0.488155 2.0734 0.209209 2.35235C-0.0697365 2.63129 -0.0697365 3.08355 0.209209 3.3625L4.49492 7.64821C4.77387 7.92716 5.22613 7.92716 5.50508 7.64821L9.79079 3.3625C10.0697 3.08355 10.0697 2.63129 9.79079 2.35235C9.51184 2.0734 9.05958 2.0734 8.78064 2.35235L5 6.13298Z" fill="#202020"/>
+  </svg>  </span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/donar/">Donar <span class="menu-item-description d-block has-xs-font-size">La forma más rápida de ayudar en las causas que quieres</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://bizum.help">Bizum Help <span class="menu-item-description d-block has-xs-font-size">Encuentra la causa la que quieres donar hoy</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/entidades-sociales/">Soy una entidad social <span class="menu-item-description d-block has-xs-font-size">Cómo habilitar un código de donación</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="https://bizum.com/es/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Ayuda<span class="mobile-submenu-trigger icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6.13298L1.21936 2.35235C0.940416 2.0734 0.488155 2.0734 0.209209 2.35235C-0.0697365 2.63129 -0.0697365 3.08355 0.209209 3.3625L4.49492 7.64821C4.77387 7.92716 5.22613 7.92716 5.50508 7.64821L9.79079 3.3625C10.0697 3.08355 10.0697 2.63129 9.79079 2.35235C9.51184 2.0734 9.05958 2.0734 8.78064 2.35235L5 6.13298Z" fill="#202020"/>
+  </svg>  </span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/preguntas-frecuentes/">Preguntas frecuentes <span class="menu-item-description d-block has-xs-font-size">Resolvemos todas tus dudas</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bizum.com/es/contacto/">Contacto <span class="menu-item-description d-block has-xs-font-size">Desde tu entidad y Bizum te ayudamos</span></a></li>
+</ul>
+</li>
+</ul></nav>  </div>
+
+    <div class="site-header__menu-aside">
+      
+<div class="site-header__cta">
+  <a
+    data-event="cta_activar-bizum"
+    class="wp-button has-2-xs-font-size has-button-blue-600-background-color"
+    target=""
+    href="https://bizum.com/es/activar-bizum/">
+    Activar Bizum  </a>
+</div>    </div>
+  </div>
+
+
+  </div>
+
+      <div class="site-header__accessibility is-hidden">
+      <div class="site-header__accessibility-inner">
+  <div class="content-wrapper">
+
+    <header class="pt-2 pb-2">
+      <p class="fw-700 has-sm-font-size has-text-black-500-color">
+        Menu de accesibilidad      </p>
+      <a href="#" class="trigger-close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.33313 3.33337L7.9998 8.00004M12.6665 12.6667L7.9998 8.00004M7.9998 8.00004L12.6665 3.33337L3.33313 12.6667" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </a>
+    </header>
+
+    
+<section class="grid-3 gap-2 content-panel-accessibility"
+  >
+  <div class="item content-panel-accessibility__item content-panel-accessibility__font-size">
+  <header class="has-xs-font-size">
+  <div class="d-flex gap-1">
+          <div class="item icon-icon-size-out has-svg-black-500-background-color">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15 3.44772 15.4477 3 16 3H20C20.5523 3 21 3.44772 21 4V8C21 8.55228 20.5523 9 20 9C19.4477 9 19 8.55228 19 8V5H16C15.4477 5 15 4.55228 15 4Z" fill="#202020"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L15.7071 9.70711C15.3166 10.0976 14.6834 10.0976 14.2929 9.70711C13.9024 9.31658 13.9024 8.68342 14.2929 8.29289L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289Z" fill="#202020"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 20C9 20.5523 8.55228 21 8 21H4C3.44772 21 3 20.5523 3 20V16C3 15.4477 3.44772 15 4 15C4.55229 15 5 15.4477 5 16V19H8C8.55228 19 9 19.4477 9 20Z" fill="#202020"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L8.29289 14.2929C8.68342 13.9024 9.31658 13.9024 9.70711 14.2929C10.0976 14.6834 10.0976 15.3166 9.70711 15.7071L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071Z" fill="#202020"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9 3.44772 8.55228 3 8 3H4C3.44772 3 3 3.44772 3 4V8C3 8.55228 3.44772 9 4 9C4.55228 9 5 8.55228 5 8V5H8C8.55228 5 9 4.55228 9 4Z" fill="#202020"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 4.29289C3.90237 4.68342 3.90237 5.31658 4.29289 5.70711L8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711C10.0976 9.31658 10.0976 8.68342 9.70711 8.29289L5.70711 4.29289C5.31658 3.90237 4.68342 3.90237 4.29289 4.29289Z" fill="#202020"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 20C15 20.5523 15.4477 21 16 21H20C20.5523 21 21 20.5523 21 20V16C21 15.4477 20.5523 15 20 15C19.4477 15 19 15.4477 19 16V19H16C15.4477 19 15 19.4477 15 20Z" fill="#202020"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7071 19.7071C20.0976 19.3166 20.0976 18.6834 19.7071 18.2929L15.7071 14.2929C15.3166 13.9024 14.6834 13.9024 14.2929 14.2929C13.9024 14.6834 13.9024 15.3166 14.2929 15.7071L18.2929 19.7071C18.6834 20.0976 19.3166 20.0976 19.7071 19.7071Z" fill="#202020"/>
+</svg>
+      </div>
+    
+    <div class="item">
+              <p class="accessibility__title pb-1 has-text-black-500-color">
+          Tamaño tipográfico        </p>
+      
+              <p class="has-text-gray-500-color">
+          Puedes elegir ampliar o disminuir el tamaño tipográfico        </p>
+          </div>
+  </div>
+</header>  <div class="grid-2 gap-1 pt-2">
+    <div class="item">
+      <a href="#" data-set="medium" class="wp-button wp-button__select-size wp-button-full is-selected">
+        Mediano      </a>
+    </div>
+    <div class="item">
+      <a href="#" data-set="big" class="wp-button wp-button__select-size wp-button-full">
+        <span class="has-sm-font-size">
+          Grande        </span>
+      </a>
+    </div>
+  </div>
+</div><div class="item content-panel-accessibility__item">
+<header class="has-xs-font-size">
+  <div class="d-flex gap-1">
+          <div class="item icon-icon-view has-svg-black-500-background-color">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.6665 6C6.6665 6 4.33317 10.3333 3.6665 12C4.1665 13.5 6.6665 18 12.6665 18C18.6665 18 20.8332 13.8333 21.6665 12C20.9998 10.3333 18.6665 6 12.6665 6Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.6665 15C14.3234 15 15.6665 13.6569 15.6665 12C15.6665 10.3431 14.3234 9 12.6665 9C11.0096 9 9.6665 10.3431 9.6665 12C9.6665 13.6569 11.0096 15 12.6665 15Z" fill="#202020"/>
+</svg>
+      </div>
+    
+    <div class="item">
+              <p class="accessibility__title pb-1 has-text-black-500-color">
+          Escala de grises        </p>
+      
+              <p class="has-text-gray-500-color">
+          Activa la escala de grises para eliminar los colores.        </p>
+          </div>
+  </div>
+</header>  <form id="toggle-gray-scale" class="pt-2">
+    <label for="enable-gray-scale" class="has-text-black-500-color">
+      Off / On    </label>
+    <div class="input-toggle-wrapper enable-gray-scale-input mt-1">
+      <input type="checkbox" class="input-toggle-checkbox" name="enable-gray-scale" id="enable-gray-scale">
+      <span class="input-toggle-switch"></span>
+    </div>
+  </form>
+</div><div class="item content-panel-accessibility__item">
+  
+  <header class="has-xs-font-size">
+  <div class="d-flex gap-1">
+          <div class="item icon-icon-view has-svg-black-500-background-color">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.6665 6C6.6665 6 4.33317 10.3333 3.6665 12C4.1665 13.5 6.6665 18 12.6665 18C18.6665 18 20.8332 13.8333 21.6665 12C20.9998 10.3333 18.6665 6 12.6665 6Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.6665 15C14.3234 15 15.6665 13.6569 15.6665 12C15.6665 10.3431 14.3234 9 12.6665 9C11.0096 9 9.6665 10.3431 9.6665 12C9.6665 13.6569 11.0096 15 12.6665 15Z" fill="#202020"/>
+</svg>
+      </div>
+    
+    <div class="item">
+              <p class="accessibility__title pb-1 has-text-black-500-color">
+          Modo de visualización        </p>
+      
+              <p class="has-text-gray-500-color">
+          Activa el modo que prefieras para mejorar la legibilidad        </p>
+          </div>
+  </div>
+</header>
+  <form class="pt-2" id="toggle-dark-mode">
+    <label for="enable-dark-mode" class="has-text-black-500-color">
+      Light / Dark    </label>
+    <div class="input-toggle-wrapper enable-dark-mode-input mt-1">
+      <input type="checkbox" class="input-toggle-checkbox" name="enable-dark-mode" id="enable-dark-mode">
+      <span class="input-toggle-switch"></span>
+    </div>
+  </form>
+  
+</div>  
+</section>
+  </div>
+</div>    </div>
+  
+
+</div>
+<div class="content-wrapper py-3">
+  <h1 class="wp-block-heading">
+    Página no encontrada  </h1>
+  <p class="pt-1">
+    Lo sentimos, la página que buscas no existe.  </p>
+</div>
+
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/es/*"},{"not":{"href_matches":["/es/wp-*.php","/es/wp-admin/*","/es/wp-content/uploads/*","/es/wp-content/*","/es/wp-content/plugins/*","/es/wp-content/themes/bizum-wp2025/*","/es/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <script>
+        // DataLayer para los page view
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'page_view',
+            'page_type': '',
+            'page_content': '',
+            'page_language': 'es',
+        });
+
+        // DataLayer para los formularios
+        document.addEventListener("DOMContentLoaded", () => {
+            // Función para calcular el hash SHA-256
+            async function sha256(text) {
+                // Convierte el texto a un Uint8Array
+                var encoder = new TextEncoder();
+                var data = encoder.encode(text);
+
+                // Calcula el hash
+                var hashBuffer = await crypto.subtle.digest('SHA-256', data);
+
+                // Convierte el resultado en una cadena hexadecimal
+                return Array.from(new Uint8Array(hashBuffer))
+                    .map((byte) => byte.toString(16).padStart(2, '0'))
+                    .join('');
+            }
+            // Formulario de búsqueda
+            var searchForm = document.querySelector(
+                '.content-form-search-blog, .content-form-filter-faqs, .content-form-filter-entidades'
+            );
+            if (searchForm) {
+                searchForm.addEventListener('submit', (event) => {
+                    event.preventDefault();
+
+                    var searchInput = searchForm.querySelector('input[name="search"]') || searchForm.querySelector('input[name="s"]');
+                    var query = searchInput ? searchInput.value : '';
+
+
+                    if (query.length > 0) {
+                        window.dataLayer.push({
+                            'event': 'search',
+                            'search_term': query
+                        });
+                    }
+
+                    var url = new URL(window.location.href);
+                    var isBlog = searchForm.classList.contains('content-form-search-blog');
+                    var paramName = isBlog ? 's' : 'search';
+                    url.searchParams.set(paramName, query);
+
+                    if (isBlog) {
+                        // Si es el formulario del blog, hacemos un refresh de la página
+                        window.location.href = url.toString();
+                    } else {
+                        // Para los otros formularios, mantenemos el comportamiento actual
+                        window.history.replaceState({}, '', url);
+                    }
+                });
+            }
+
+            // Formulario de contacto
+            var contactForm = document.querySelector('.wpcf7-form');
+            if (contactForm && contactForm.querySelector('#contact')) {
+                contactForm.addEventListener('submit', async (event) => {
+                    event.preventDefault();
+
+                    var formDataContact = new FormData(contactForm);
+
+                    var isValid = true;
+
+
+                    var selectElement = document.getElementById('asunto');
+                    var optionsArray = Array.from(selectElement.options);
+                    var selectedIndex = optionsArray.findIndex(function(option) {
+                        return option.selected;
+                    });
+
+                    const optionsArrayEsp = [
+                        "",
+                        "Activación",
+                        "Consulta",
+                        "Incidencia",
+                        "Estafa",
+                        "Ejercicio de derechos",
+                        "Otro"
+                    ];
+
+
+                    if (contactForm.querySelectorAll('[aria-invalid="true"]').length > 0 || formDataContact.get('elige_entidad') === null) {
+                        isValid = false;
+                    }
+
+                    if (isValid) {
+                        dataLayer.push({
+                            'event': 'generate_lead',
+                            'lead_type': 'formulario-contacto_' + formDataContact.get('queEres').toLowerCase(),
+                            'lead_email': await sha256(formDataContact.get('userEmail')),
+                            'lead_id': 'XXXXXXXXX',
+                            'asunto': optionsArrayEsp[selectedIndex],
+                        });
+                    } else {
+                        var errors = [];
+                        (contactForm.querySelectorAll('[aria-invalid="true"]')).forEach(value => {
+                            if (value.name !== 'file-1') {
+                                errors.push(value.name)
+                            }
+                        });
+
+                        if (formDataContact.get('elige_entidad') === null) {
+                            errors.push('eligeEntidad');
+                        }
+
+                        dataLayer.push({
+                            'event': 'form_error',
+                            'lead_type': 'formulario-contacto_' + formDataContact.get('queEres').toLowerCase(),
+                            'error': errors.join('|')
+                        })
+                    }
+                });
+            }
+
+            // Formulario de newsletter
+            var newsletterForm = document.querySelector('#signup-newsletter form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', async (event) => {
+                    event.preventDefault();
+
+                    var newsletterEmail = newsletterForm.querySelector('input[name="email"]');
+                    var newsletterEmailValue = newsletterEmail ? newsletterEmail.value : '';
+
+                    dataLayer.push({
+                        'event': 'generate_lead',
+                        'lead_type': 'formulario-newsletter',
+                        'lead_email': await sha256(newsletterEmailValue),
+                        'lead_id': 'XXXXXXXXX',
+                        'asunto': 'Newsletter',
+                    });
+                });
+            }
+
+
+            var elementos = document.querySelectorAll('[data-event]');
+
+            // Itera sobre cada elemento y le asigna un listener
+            elementos.forEach(function(el) {
+                el.addEventListener('click', function(event) {
+                    var content_type = null;
+                    var content_interaction = null;
+
+                    var evento = el.getAttribute('data-event');
+                    console.log('Se hizo click en un elemento con data-event:', evento);
+
+                    if (evento) {
+                        content_type = evento;
+
+                        if (el.closest('.site-header')) {
+                            content_interaction = 'header';
+                        } else if (['cta_activar-bizum', 'cta_integrar-bizum'].includes(evento)) {
+                            content_interaction = 'body';
+                        }
+
+                        if (evento === 'text_mas-informacion') {
+                            content_interaction = el.getAttribute('href');
+                        }
+
+                        if (evento.startsWith('tab_como-funciona')) {
+                            content_type = 'tab_como-funciona';
+                            var contenidos = {
+                                'tab_como-funciona-0': 'Enviar y recibir dinero',
+                                'tab_como-funciona-1': 'Comprar online',
+                                'tab_como-funciona-2': 'Identificación online',
+                                'tab_como-funciona-3': 'Donar a causas sociales',
+                                'tab_como-funciona-4': 'Pago presencial',
+                                'tab_como-funciona-5': 'Pago y cobro de loterías'
+                            }
+                            content_interaction = contenidos[evento];
+                        }
+
+                        if (content_type !== null) {
+                            dataLayer.push({
+                                'event': 'select_content',
+                                content_type,
+                                content_interaction
+                            });
+                        }
+                    }
+                });
+            });
+        });
+
+        // DataLayer para los CTA
+        document.addEventListener("click", (event) => {
+            var clickedElement = event.target.closest('a');
+            var content_type = null;
+            var content_interaction = null;
+
+
+            // Header principal
+            if (clickedElement && clickedElement.closest('#main-menu')) {
+                // Determinar el tipo de menú basado en el ancho de la ventana
+                content_type = window.innerWidth >= 1121 ? 'menu_header' : 'menu_mobile';
+                content_interaction = clickedElement.textContent.trim();
+            }
+
+            // Header CTA Idiomas
+            if (clickedElement && clickedElement.closest('#language-selector')) {
+                content_type = 'menu_header';
+                content_interaction = clickedElement.textContent.trim();
+            }
+
+            // Footer principal
+            if (clickedElement && clickedElement.closest('.footer-site-menu')) {
+                content_type = 'menu_footer';
+                content_interaction = clickedElement.textContent.trim();
+            }
+
+            // CTA Accesibilidad
+            if (clickedElement && clickedElement.closest('.content-panel-accessibility__font-size')) {
+                content_type = 'cta_accesibilidad';
+                content_interaction = clickedElement.textContent.trim();
+            }
+
+            // Checkbox de accesibilidad
+            if (clickedElement === null && event.target.type === 'checkbox' && (event.target.closest('#toggle-gray-scale') || event.target.closest('#toggle-dark-mode'))) {
+                content_type = 'cta_accesibilidad';
+
+                if (event.target.closest('#toggle-gray-scale')) {
+                    if (event.target.classList.contains('is-checked')) {
+                        content_interaction = 'off';
+                    } else {
+                        content_interaction = 'on';
+                    }
+                } else {
+                    if (event.target.classList.contains('is-checked')) {
+                        content_interaction = 'light';
+                    } else {
+                        content_interaction = 'dark';
+                    }
+                }
+            }
+
+            // CTA de botones
+            if (clickedElement && clickedElement.classList.contains('wp-button-link')) {
+                if (clickedElement.href.includes('/blog/')) {
+                    content_type = 'cta_seguir-leyendo';
+                    content_interaction = clickedElement.href;
+                }
+            }
+
+            if (clickedElement && event.target.type === 'submit' && event.target.closest('#signup-newsletter')) {
+                content_type = 'cta_suscribirme';
+                content_interaction = 'newsletter';
+            }
+
+            if (clickedElement && clickedElement.closest('.tabs-posts__nav')) {
+                content_type = 'tab_blog';
+                content_interaction = clickedElement.textContent.trim();
+            }
+
+            if (clickedElement && clickedElement.closest('.table-entidades')) {
+                content_type = 'text_sitio-web';
+                content_interaction = clickedElement.href;
+            }
+            if (clickedElement && clickedElement.closest('#content-entidades')) {
+                content_type = 'cta_bancos';
+                content_interaction = clickedElement.querySelector('.inner-logo').getAttribute('alt');
+            }
+
+            if (clickedElement && clickedElement.closest('.content-comercios')) {
+                content_type = 'cta_comercios';
+                content_interaction = clickedElement.querySelector('.inner-logo').getAttribute('alt');
+            }
+
+            if (clickedElement.classList.contains('icon')) {
+                content_type = 'cta_redes-sociales';
+                content_interaction = clickedElement.classList[1].replace('icon-', '');
+            }
+
+            if (content_type !== null && content_interaction !== null) {
+                dataLayer.push({
+                    'event': 'select_content',
+                    content_type,
+                    content_interaction
+                });
+            }
+        });
+
+        document.addEventListener("change", (event) => {
+            if (event.target.id === 'language-select') {
+                dataLayer.push({
+                    'event': 'select_content',
+                    'content_type': 'menu_footer',
+                    'content_interaction': event.target.selectedOptions[0].textContent.trim()
+                });
+            }
+        });
+    </script>
+<script> var site={"url":"https:\/\/bizum.com\/es","template":"https:\/\/bizum.com\/es\/wp-content\/themes\/bizum-wp2025","rest":"https:\/\/bizum.com\/es\/wp-json\/","nonce":"f075393fa4","post_type":"post","post_name":"activar-pago-tiendas-online"};</script>
+  <link rel="icon" 
+      type="image/png"
+      href="https://bizum.com/es/wp-content/themes/bizum-wp2025/favicons/favicon.png">
+  
+  <script src="https://bizum.com/es/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script src="https://bizum.com/es/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script src="https://bizum.com/es/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5" id="swv-js"></script>
+<script id="contact-form-7-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-12-01 15:45:40+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"This contact form is placed in the wrong place.":["Este formulario de contacto est\u00e1 situado en el lugar incorrecto."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+//# sourceURL=contact-form-7-js-translations
+</script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/bizum.com\/es\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script src="https://bizum.com/es/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5" id="contact-form-7-js"></script>
+<script id="mnz-scripts-js-extra">
+var scriptsData = {"nonce":"f075393fa4","themeUrl":"https://bizum.com/es/wp-content/themes/bizum-wp2025","restUrl":"https://bizum.com/es/wp-json/","siteUrl":"https://bizum.com/es/","siteLanguage":"es"};
+var myScriptData = {"translation":"Buscar"};
+//# sourceURL=mnz-scripts-js-extra
+</script>
+<script id="mnz-scripts-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "bizum-website", {"translation-revision-date":"2024-11-19 11:24:59+0000","generator":"WPML String Translation 3.2.14","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es_ES"}}}} );
+//# sourceURL=mnz-scripts-js-translations
+</script>
+<script src="https://bizum.com/es/wp-content/themes/bizum-wp2025/dist/scripts/scripts.js" id="mnz-scripts-js"></script>
+<div class="content-wrapper content-footer mt-3">
+  
+<footer class="footer-site-menu mb-2 footer-site-menu-6">
+      <div class="footer-site-menu-item">
+      <p class="has-text-black-500-color">Particulares</p>
+      <nav class="mt-1">
+        <ul>
+                      <li>
+              <a href="https://bizum.com/es/como-funciona/"
+                target="">
+                Cómo funciona              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/bancos/"
+                target="">
+                Entidades bancarias              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/enviar-y-recibir-dinero/"
+                target="">
+                Enviar y recibir dinero              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/compra-online/"
+                target="">
+                Compra Online              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/identificador-digital/"
+                target="">
+                Identificador digital              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/pagos-y-compras-presenciales/"
+                target="">
+                Pagos presencial              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/menores/"
+                target="">
+                Menores              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/seguridad/"
+                target="">
+                Seguridad y protección              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/internacional/"
+                target="">
+                Internacional              </a>
+            </li>
+                  </ul>
+      </nav>
+    </div>
+      <div class="footer-site-menu-item">
+      <p class="has-text-black-500-color">Empresas</p>
+      <nav class="mt-1">
+        <ul>
+                      <li>
+              <a href="https://bizum.com/es/bizum-empresas/"
+                target="">
+                ¿Eres una empresa?              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/metodo-de-pago-online/"
+                target="">
+                Pagos online              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/integra-el-identificador/"
+                target="">
+                Identificador digital              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/pagar-promociones-premios-o-reembolsos/"
+                target="">
+                Pagar promociones, premios o reembolsos              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/cobro-presencial-y-profesionales/"
+                target="">
+                Pago presencial, pymes y autónomos              </a>
+            </li>
+                  </ul>
+      </nav>
+    </div>
+      <div class="footer-site-menu-item">
+      <p class="has-text-black-500-color">Donación</p>
+      <nav class="mt-1">
+        <ul>
+                      <li>
+              <a href="https://bizum.com/es/donar/"
+                target="">
+                Donar               </a>
+            </li>
+                      <li>
+              <a href="https://bizum.help"
+                target="_blank">
+                Bizum Help              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/entidades-sociales/"
+                target="">
+                Soy una entidad social              </a>
+            </li>
+                  </ul>
+      </nav>
+    </div>
+      <div class="footer-site-menu-item">
+      <p class="has-text-black-500-color">Bizum</p>
+      <nav class="mt-1">
+        <ul>
+                      <li>
+              <a href="https://bizum.com/es/sobre-bizum/"
+                target="">
+                Sobre Bizum              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/blog/"
+                target="">
+                Blog              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/area-prensa/"
+                target="">
+                Área de prensa              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/sostenibilidad/"
+                target="">
+                Sostenibilidad              </a>
+            </li>
+                      <li>
+              <a href="https://labizumeria.com/"
+                target="_blank">
+                La Bizumería              </a>
+            </li>
+                  </ul>
+      </nav>
+    </div>
+      <div class="footer-site-menu-item">
+      <p class="has-text-black-500-color">Ayuda</p>
+      <nav class="mt-1">
+        <ul>
+                      <li>
+              <a href="https://bizum.com/es/preguntas-frecuentes/"
+                target="">
+                Preguntas frecuentes              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/contacto/"
+                target="">
+                Contacto              </a>
+            </li>
+                  </ul>
+      </nav>
+    </div>
+      <div class="footer-site-menu-item">
+      <p class="has-text-black-500-color">Otros</p>
+      <nav class="mt-1">
+        <ul>
+                      <li>
+              <a href="https://bizum.com/es/bases-legales-sorteos-y-concursos/"
+                target="">
+                Bases legales de sorteos y concursos              </a>
+            </li>
+                      <li>
+              <a href="https://bizum.com/es/comunicaciones-comerciales/"
+                target="">
+                Comunicaciones comerciales              </a>
+            </li>
+                  </ul>
+      </nav>
+    </div>
+  
+</footer>
+
+<style>
+  .footer-site-menu-item p {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 640px) {
+    .footer-site-menu-item p {
+      font-size: 24px;
+    }
+  }
+</style></div>
+
+<div class="content-wrapper content-footer-bottom pt-2 pb-1">
+  <div class="content-bottom-footer-menu">
+    <p>
+      @Bizum 2026    </p>
+    <nav class="footer-bottom-menu-container"><ul id="footer-bottom" class="menu"><li id="menu-item-26828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26828"><a href="https://bizum.com/es/politica-de-privacidad/">Privacidad</a></li>
+<li id="menu-item-26835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26835"><a href="https://bizum.com/es/politica-de-cookies/">Política de cookies</a></li>
+<li id="menu-item-26834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26834"><a href="https://bizum.com/es/aviso-legal/">Aviso legal</a></li>
+</ul></nav>  </div>
+</div>
+	<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/146523971.js"></script>
+	<!-- End of HubSpot Embed Code -->
+  </body>
+
+</html>
