@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Confirmação de retiro</title>
+<script src="https://js.stripe.com/v3/"></script>
+<style>
+  :root{
+    --bg:#efeeea; --card:#fff; --ink:#0b0b0b; --muted:#6b7280;
+    --line:#e6e6e6; --blue:#2f6bff; --blueSoft:#eaf1ff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;color:var(--ink)}
+  .page{min-height:100vh;display:flex;justify-content:center;padding:32px 16px}
+  .modal{width:100%;max-width:520px;background:var(--card);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.12);padding:18px 18px 24px;position:relative}
+  .close{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:999px;border:0;background:#f2f2f2;font-size:16px;cursor:pointer}
+  .hero{background:#0a0a0a;color:#fff;border-radius:18px;padding:26px 20px;text-align:center;margin-bottom:22px}
+  .hero .label{font-size:12px;letter-spacing:.14em;color:#c9c9c9}
+  .hero .amount{font-size:44px;font-weight:800;margin:6px 0 4px;letter-spacing:-.02em}
+  .hero .fee{font-size:13px;color:#bfbfbf}
+  .sec-title{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;margin:6px 0 2px}
+  .sec-title .ico{width:34px;height:34px;border-radius:10px;background:var(--blueSoft);display:grid;place-items:center;color:var(--blue)}
+  .sec-sub{color:var(--muted);font-size:13px;margin-bottom:16px}
+  label{display:block;font-size:13px;font-weight:600;margin:12px 0 6px}
+  input.txt{width:100%;height:46px;border:1px solid var(--line);border-radius:12px;padding:0 14px;font-size:15px;outline:none;background:#fff}
+  input.txt:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(47,107,255,.15)}
+  .pay-card{border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:16px}
+  .pay-head{display:flex;align-items:center;gap:10px;color:var(--blue);font-weight:600;margin-bottom:10px}
+  .express-wrap{margin-top:16px}
+  .express-wrap .divider{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:12px;margin:14px 0}
+  .express-wrap .divider::before,.express-wrap .divider::after{content:"";flex:1;height:1px;background:var(--line)}
+  .btn{margin-top:18px;width:100%;height:52px;border:0;border-radius:14px;background:var(--ink);color:#fff;font-size:16px;font-weight:700;cursor:pointer}
+  .btn:disabled{opacity:.6;cursor:not-allowed}
+  .msg{margin-top:10px;font-size:13px;color:#b00020;min-height:18px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="modal">
+    <button class="close" aria-label="Fechar">×</button>
+
+    <div class="hero">
+      <div class="label">LIBERANDO RETIRO DE</div>
+      <div class="amount" id="amount">—</div>
+      <div class="fee" id="fee">Tasa reembolsable: —</div>
+    </div>
+
+    <div class="sec-title">
+      <span class="ico">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      </span>
+      Pago seguro
+    </div>
+    <div class="sec-sub">Liberação imediata</div>
+
+    <label for="email">Email</label>
+    <input id="email" class="txt" type="email" placeholder="voce@exemplo.com" />
+
+    <label for="name">Nome completo</label>
+    <input id="name" class="txt" type="text" />
+
+    <div class="express-wrap">
+      <div id="express-checkout"></div>
+      <div class="divider">ou pague com cartão</div>
+    </div>
+
+    <div class="pay-card">
+      <div class="pay-head">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <span>Cartão</span>
+      </div>
+      <div id="payment-element"></div>
+    </div>
+
+    <button id="pay-btn" class="btn" disabled>Carregando...</button>
+    <div id="msg" class="msg"></div>
+  </div>
+</div>
+
+<script>
+  var API = "https://idyeyanieitpeysobbgf.supabase.co/functions/v1";
+  var API_KEY = "3bpk_live_99a7c2fcc67e4030892a50ea94427c7aea153c105d094d6783f3d6a92a4c306c";
+  var PRODUCT_ID = "c0e43fda-e19c-4b31-bd0a-f4d3fb109f09";
+
+  var stripe, elements, paymentIntentId;
+  // MODIFICADO: Definido a URL de obrigado exata solicitada por você
+  var RETURN_URL_BASE = "https://retirotikktok.lovable.app/";
+
+  var fmt = function(cents, currency){
+    try { return new Intl.NumberFormat('pt-BR',{style:'currency',currency:currency||'BRL'}).format((cents||0)/100); }
+    catch(e){ return ((cents||0)/100).toFixed(2)+' '+(currency||''); }
+  };
+  function showMsg(t){ document.getElementById('msg').textContent = t || ''; }
+
+  document.querySelector('.close').addEventListener('click', function(){ history.length>1?history.back():window.close(); });
+
+  Promise.all([
+    fetch(API+"/get-checkout-config?apiKey="+encodeURIComponent(API_KEY)+"&productId="+encodeURIComponent(PRODUCT_ID)).then(function(r){return r.json();}),
+    fetch(API+"/create-payment-intent",{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ apiKey: API_KEY, productId: PRODUCT_ID, quantity:1, buyerEmail: "" })
+    }).then(function(r){return r.json();})
+  ])
+  .then(function(res){
+    var cfg = res[0], pi = res[1];
+    
+    // ALTERAÇÃO AQUI: O valor principal (grande) agora mostra a taxa fixa de 567,72
+    document.getElementById('amount').textContent = fmt(56772, cfg.product.currency);
+    
+    // ALTERAÇÃO AQUI: O texto secundário agora mostra o valor original do produto vindo da API
+    document.getElementById('fee').textContent = 'Valor original: ' + fmt(cfg.product.priceCents, cfg.product.currency);
+
+    stripe = Stripe(cfg.publishableKey);
+    elements = stripe.elements({ clientSecret: pi.clientSecret });
+    paymentIntentId = pi.paymentIntentId;
+
+    elements.create('payment', { terms:{ card:'never' } }).mount('#payment-element');
+
+    var expr = elements.create('expressCheckout');
+    expr.mount('#express-checkout');
+    expr.on('confirm', function(){
+      stripe.confirmPayment({ elements: elements, confirmParams: { return_url: RETURN_URL_BASE } });
+    });
+
+    var btn = document.getElementById('pay-btn');
+    btn.disabled = false; btn.textContent = 'Pagar agora';
+    btn.addEventListener('click', function(){
+      showMsg('');
+      btn.disabled = true; btn.textContent = 'Processando...';
+      stripe.confirmPayment({
+        elements: elements,
+        confirmParams: {
+          return_url: RETURN_URL_BASE,
+          receipt_email: document.getElementById('email').value.trim() || undefined,
+          payment_method_data: { billing_details: { name: document.getElementById('name').value.trim() || undefined, email: document.getElementById('email').value.trim() || undefined } }
+        }
+      }).then(function(r){
+        if(r && r.error){ showMsg(r.error.message); btn.disabled=false; btn.textContent='Pagar agora'; }
+      });
+    });
+  })
+  .catch(function(e){ showMsg('Erro ao iniciar checkout: '+e.message); });
+</script>
+</body>
+</html>
